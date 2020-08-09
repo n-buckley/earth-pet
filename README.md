@@ -14,7 +14,7 @@ npm install
 ```
 Next, to run the application, use the following command
 ```bash
-npm run start
+npm start
 ```
 
 
