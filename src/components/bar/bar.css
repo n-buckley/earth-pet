@@ -1,0 +1,49 @@
+/* .bar {
+	border-radius: 10px;
+
+	float: right;
+	padding: 1vh;
+
+	margin-right: auto;
+	margin-left: auto;
+	background: linear-gradient(to left, #F2709C, #FF9472);
+	height: 35px;
+	width: 90px;
+	font-weight: 700;
+	color: white;
+	border: blanchedalmond;
+	
+} */
+
+.bar{
+		display: inline-block;
+		margin-right: auto;
+		margin-left: auto;
+		padding: 1.5vh 3vh;
+		font-size: 3vh;
+		font-weight: 700;
+		cursor: pointer;
+		text-align: center;
+		text-decoration: none;
+		outline: none;
+		color: #fff;
+		background: #FF9472;
+		border: none;
+		border-radius: 2.5vh;
+		transition-duration: 0.4s;
+}
+
+.bar:hover{
+	background-color: #f2709c;
+}
+
+.bar:active {
+  background-color: palevioletred;
+  box-shadow: 0 1vh #666;
+  transform: translateY(2px);
+}
+.barP{
+	font-weight: 700;
+	font-size: 4vh;
+	margin: 0;
+}

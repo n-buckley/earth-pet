@@ -1,0 +1,25 @@
+.reminders {
+    background-color: #8bc34a;
+    border: #8bc34a;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 3vh;
+    border-radius: 50%;
+    width: 5vh;
+    height: 5vh;
+    margin: auto;
+}
+
+.reminders:active {
+    background-color: #8bc34a;
+    box-shadow: 0 5px #666;
+    transform: translateY(2px);
+  }
+
+.reminder {
+    padding: .5vh;
+}
+
+
+
