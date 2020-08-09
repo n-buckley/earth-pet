@@ -12,7 +12,7 @@ export default class Navbar extends React.Component {
   render() {
     return (
       <nav className="NavbarItems">
-        <h1 className="navbar-logo">React <i className="fab fa-react"></i></h1>
+        <h1 className="navbar-logo"> EarthPet <i className="fas fa-cat"></i></h1>
         <div className="menu-icon" onClick={this.handleClick}> 
           {/* if this.state.clicked is true,  icon will be set to fas fa-times which X icon. 
           Else, set the icon to fas fa-bars which is the is the 3 bars (aka hamburger bars)*/}
