@@ -40,6 +40,38 @@ const Subtitle = styled.p`
     font-size: 4vh;
 `
 
+const Done = styled.button`
+    
+
+    display: inline-block;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 1.5vh 3vh;
+    font-size: 3vh;
+    font-weight: 700;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background: #FF9472;
+    border: none;
+    border-radius: 2.5vh;
+    transition-duration: 0.4s;
+    margin:auto;
+    margin-top: 5vh;
+
+    &:hover{
+    background-color: #f2709c;
+    }
+
+    &:active {
+    background-color: palevioletred;
+    box-shadow: 0 1vh #666;
+    transform: translateY(2px);
+}
+`
+
 export default class landingPage extends React.Component {
     constructor(props) {
         super(props);
@@ -51,7 +83,6 @@ export default class landingPage extends React.Component {
             <div>
                 <LandingPage>
                     <PageContainer>
-
                         <Title>WELCOME</Title>
                         <Subtitle>This app will help you keep on top of sustainable habits by reminding you and incentivizing you by taking care of a cute animal</Subtitle>
                     </PageContainer>
@@ -65,6 +96,9 @@ export default class landingPage extends React.Component {
                             reminder={rem.r}>
                         </ReminderContainer>
                     ))}
+                    <center>
+                        <Done>Done</Done>
+                    </center>
                 </PageContainer>
 
             </div>
@@ -76,5 +110,5 @@ export default class landingPage extends React.Component {
 };
 
 
-const reminders = [{ r: "hi there" }, { r: "woo!" }, { r: "did I do it?" }]
+const reminders = [{ r: "Bring a canvas bag to the grocery" }, { r: "Pick up litter" }, { r: "Read for 5 minutes about a sustainability topic" }]
 

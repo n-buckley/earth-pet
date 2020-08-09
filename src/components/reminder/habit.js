@@ -1,5 +1,6 @@
 import React from 'react'; 
 import styled from 'styled-components';
+import Checkbox from '@material-ui/core/Checkbox';
 
 import './reminder.css'
 
@@ -8,13 +9,13 @@ import './reminder.css'
 const ComponentContainer = styled.div`
     width: 63vw;
     margin-top: 5vh;
-    background: linear-gradient(to left, #99e4ee, #aed581);
+    background-color: #000;
     border-radius: 1vw;
     margin: auto;
     margin-top: 5vh;
     display: grid;
     padding: 1vw;
-    grid-template-columns: 60vw 10vw;
+    grid-template-columns: 50vw 20vw;
     grid-template-rows: auto;
     grid-template-areas:
     'reminder button';
@@ -24,45 +25,39 @@ const ComponentContainer = styled.div`
 
 const ReminderContainer = styled.div`
     grid-area: reminder;
-    width: 60vw;
+    width: 50vw;
     height: 5vh;
     font-size: 3vh;
 `
 
 const ButtonContainer = styled.div`
     grid-area: button;
-    width: 10vw;
+    width: 20vw;
     height: 5vh;
 `
 
-export var myHabits = ["helol"]
 
-function makeMine(rem){
-    myHabits.push(rem);
-    console.log("clicked");
-    console.log(rem);
-    console.log(myHabits);
-} 
-
-class reminder extends React.Component {
+class habit extends React.Component {
     constructor(props) {
       super(props);
       this.state = {
         open: false
       };
     }
+
+    
   
     render() {
       return (
         <ComponentContainer
           className={`${this.props.className}`}
           show={this.state.open}
-        > 
-          <ReminderContainer><div className="reminder">{this.props.reminder}</div></ReminderContainer>
-          <ButtonContainer><button className="reminders" onClick={()=>{makeMine(this.props.reminder)}}>+</button></ButtonContainer>
+        >
+          <ReminderContainer><div className="habit">{this.props.habit}</div></ReminderContainer>
+          <ButtonContainer><button>Completed</button></ButtonContainer>
         </ComponentContainer>
       );
     };
   };
 
-  export default reminder;
+  export default habit;
