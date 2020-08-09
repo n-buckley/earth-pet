@@ -16,6 +16,7 @@ const ProgressBarContainer = styled.div `
   margin-top: 10vh;
 `;
 
+
 export default class Bar extends React.Component {
   constructor(props){
     super(props);

@@ -7,7 +7,8 @@ import './App.css';
 
 import NewReminders from './pages/landingPage.js';
 import PetPage from './pages/petPage.js'
-
+import HabitPage from './pages/habitPage.js'
+import Notifications from './components/Notifications/index.js';
 
 /*Things we still need to do 
 - the actual pop up 
@@ -16,12 +17,19 @@ import PetPage from './pages/petPage.js'
 - need to create my habits by when you click the button the specific habit is pushed to an array 
 - and thenn... idk? anything else?
 */
+const Container = styled.div`
+`;
 
 function App() {
   return (
     <ThemeProvider theme={siteColors}>
+      <Container>
+        <Notifications></Notifications>
+      </Container>
       <NewReminders></NewReminders>
       <PetPage></PetPage>
+      <HabitPage></HabitPage>
+
     </ThemeProvider>        
   );
 };
