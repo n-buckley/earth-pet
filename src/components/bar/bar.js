@@ -31,13 +31,13 @@ export default class Bar extends React.Component {
       <AppWrapper>
         <ProgressBarContainer>
             <Grid container   direction="row"   justify="center"   alignItems="center">
-                <button class = 'bar' onClick = {() => this.setState({percentage: this.state.percentage + 10})}>Increase</button>
-                <button class = 'bar' onClick = {() => this.setState({percentage: this.state.percentage - 10})}>Decrease</button>
+                <button className = 'bar' onClick = {() => this.setState({percentage: this.state.percentage + 10})}>Increase</button>
+                <button className = 'bar' onClick = {() => this.setState({percentage: this.state.percentage - 10})}>Decrease</button>
             </Grid>
           
             <ProgressBar percentage = {this.state.percentage} />
             <center>
-             <p class = "barP">{this.state.percentage}%</p>
+             <p className = "barP">{this.state.percentage}%</p>
             </center>
           
         </ProgressBarContainer>

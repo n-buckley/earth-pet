@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import NavBar from './components/Navbar/Navbar'
+
 import { createMuiTheme } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/styles';
 import './App.css';
@@ -23,9 +25,13 @@ const Container = styled.div`
 function App() {
   return (
     <ThemeProvider theme={siteColors}>
+<<<<<<< HEAD
       <Container>
         <Notifications></Notifications>
       </Container>
+=======
+      <NavBar></NavBar>
+>>>>>>> ef9996a9b00b166728b5ba70509dfb71fae8bb2e
       <NewReminders></NewReminders>
       <PetPage></PetPage>
       <HabitPage></HabitPage>

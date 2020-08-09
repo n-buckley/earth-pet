@@ -1,5 +1,23 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+
+## Install/Setup
+
+Clone this repository using the command
+```bash
+git clone [online_repository_link]
+```
+
+Navigate to the directory of local repository and run the following command to install all dependencies
+```bash
+npm install
+```
+Next, to run the application, use the following command
+```bash
+npm run start
+```
+
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -68,7 +86,7 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
 
 
-## Contributors:
+## Contributors ✨☄️ :
 
 [Nicole Buckley](https://github.com/n-buckely)  
 [Nowshin Sayara](https://github.com/NOSH2000)  
