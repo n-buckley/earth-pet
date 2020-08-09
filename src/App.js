@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import NavBar from './components/Navbar/Navbar'
+
 import { createMuiTheme } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/styles';
 import './App.css';
@@ -20,6 +22,7 @@ import PetPage from './pages/petPage.js'
 function App() {
   return (
     <ThemeProvider theme={siteColors}>
+      <NavBar></NavBar>
       <NewReminders></NewReminders>
       <PetPage></PetPage>
     </ThemeProvider>        
