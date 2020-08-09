@@ -25,13 +25,10 @@ const Container = styled.div`
 function App() {
   return (
     <ThemeProvider theme={siteColors}>
-<<<<<<< HEAD
-      <Container>
+      {/* <Container>
         <Notifications></Notifications>
-      </Container>
-=======
+      </Container> */}
       <NavBar></NavBar>
->>>>>>> ef9996a9b00b166728b5ba70509dfb71fae8bb2e
       <NewReminders></NewReminders>
       <PetPage></PetPage>
       <HabitPage></HabitPage>
